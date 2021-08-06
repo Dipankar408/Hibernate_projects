@@ -1,0 +1,6 @@
+apply plugin: "application"
+dependencies
+{
+	compile project(":core")
+}
+mainClassName= "app.db.progs.AppRetrive"
