@@ -1,4 +1,4 @@
-package com.mapps.progs;
+package progs;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

@@ -10,16 +10,16 @@ public class MyApp {
 
 	public static void main(String[] args) {
 		Laptop lp = new Laptop();
-		lp.setLid(12);
-		lp.setLname("Asus");
+		lp.setLid(18);
+		lp.setLname("Dell");
 		
 		Laptop lp2=new Laptop();
 		lp2.setLid(10);
 		lp2.setLname("Dell");
 		
 		Student s = new Student();
-		s.setSid(236);
-		s.setSname("Waju");
+		s.setSid(196);
+		s.setSname("Raju");
 		s.setMarks(75.23);
 		s.getLap().add(lp);
 		lp.getStd().add(s);
@@ -60,27 +60,17 @@ public class MyApp {
 //		
 //		Query q1 = session.createQuery("from Laptop where lid=" + lp_id);
 //		ch_lp = (Laptop) q1.uniqueResult();
-//		if(ch_lp!=null)
-//		{
-//			Session ss=sf.openSession();
-//			Transaction t=ss.beginTransaction();
-//			int id=ch_lp.getLid();
-//			Query data=ss.createQuery("delete from Laptop where lid="+id);
-//			data.executeUpdate();
-//			t.commit();
-//			
-//		}
+//		
 //		if (ch_std == null) {
-//			s.getLap().add(ch_lp);
+////			s.getLap().add(ch_lp);
 //			session.save(s);
-//			session.save(lp);
 //		}
 //		
 //		if (ch_lp == null) {
-//			lp.getStd().add(ch_std);
+////			lp.getStd().add(ch_std);
 //			session.save(lp);
 //		}
-//		
+		
 		tx.commit();
 		System.out.println("Done");
 

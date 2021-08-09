@@ -1,4 +1,4 @@
-package com.mapps.progs;
+package progs;
 
 
 import org.hibernate.Session;

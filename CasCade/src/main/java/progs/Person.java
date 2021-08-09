@@ -1,12 +1,14 @@
-package com.mapps.progs;
+package progs;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
+@NamedQuery(name="find name",query="select p from Person p")
 public class Person {
 	@Id
 	private int pid;

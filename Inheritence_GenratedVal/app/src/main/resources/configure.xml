@@ -6,15 +6,18 @@
 <hibernate-configuration>  
   
     <session-factory>  
-        <property name="hbm2ddl.auto">update</property>  
+        <property name="hbm2ddl.auto">create</property>  
         <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>  
-        <property name="connection.url">jdbc:postgresql://localhost:5432/employee</property>  
+        <property name="connection.url">jdbc:postgresql://localhost:5432/employee_db</property>  
         <property name="connection.username">axelor</property> 
-        <property name="connection.password">m3@xllr</property>
+        <property name="connection.password">root</property>
         <property name="connection.driver_class">org.postgresql.Driver</property>  
         <property name="show_sql">true</property>
-		<property name="format_sql">true</property>
-		<property name="use_sql_comments">true</property>
+        
+        
+        <mapping class="table.per.subclass.Employee"/>
+        <mapping class="table.per.subclass.Regular"/>
+        <mapping class="table.per.subclass.Contractual"/>
     </session-factory>  
   
 </hibernate-configuration>  
