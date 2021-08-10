@@ -1,4 +1,4 @@
-
+allprojects{
 	apply plugin: "java"
 	apply plugin: "application"
 	repositories{
@@ -10,4 +10,5 @@
 		
 		compile group: 'org.postgresql', name: 'postgresql', version: '42.2.4'
 	}
+}
 mainClassName= 'com.onemany.map.MapOneMany'
